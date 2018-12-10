@@ -12,7 +12,7 @@ if (window.location.hash != "") {
     });
 }
 
-$("#sbtn").click(shorturl);
+$("#btngenerate").click(shorturl);
 
 function cinp(){
     document.getElementById("erbox").innerHTML = "";
@@ -96,8 +96,7 @@ function send_request(url) {
         'dataType': 'json',
         'contentType': 'application/json; charset=utf-8'
 });
-simplecopy(window.location.href);
-document.getElementById('shortenedURL').value = window.location.href
+    
 }
 
 function shorturl(){
