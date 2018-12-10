@@ -12,7 +12,7 @@ if (window.location.hash != "") {
     });
 }
 
-$("#btngenerate").click(shorturl);
+$("#sbtn").click(shorturl);
 
 function cinp(){
     document.getElementById("erbox").innerHTML = "";
@@ -43,7 +43,7 @@ function cinp(){
 }
 
 function geturl(){
-    var url = document.getElementById("generateurl").value;
+    var url = document.getElementById("safeurl").value;
     var protocol_ok = url.startsWith("http://") || url.startsWith("https://") || url.startsWith("ftp://");
     if(!protocol_ok){
         newurl = "http://"+url;
